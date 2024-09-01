@@ -16,9 +16,13 @@ namespace Clases.Ejercicios.Ejercicio2
 
     public class Persona
     {
-        public string _nombre;
-        public string _apellido;
-        public DateTime _fechaNacimiento;
+
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+
+        public DateTime FechaNacimiento { get; set; }
+
+        public string NombreCompleto => $"{Nombre} {Apellido}";
     }
 
     public class Ejercicio
@@ -26,9 +30,9 @@ namespace Clases.Ejercicios.Ejercicio2
         public Persona ConstruirPersona(string nombre, string apellido, DateTime fechaNacimiento)
         {
             var persona = new Persona();
-            persona._nombre = nombre;
-            persona._apellido = apellido;
-            persona._fechaNacimiento = fechaNacimiento;
+            persona.Nombre = nombre;
+            persona.Apellido = apellido;
+            persona.FechaNacimiento = fechaNacimiento;
             return persona;
         }
     }
