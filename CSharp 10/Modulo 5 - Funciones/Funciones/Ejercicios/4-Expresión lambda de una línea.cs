@@ -15,6 +15,6 @@ namespace Funciones.Ejercicios
     public class ExpresiónLambdaDeUnaLínea
     {
         // Tu código debajo de esta línea
-
+        public int Multiplicar(int a, int b) => a * b;
     }
 }
