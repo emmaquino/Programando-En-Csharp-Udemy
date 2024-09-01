@@ -14,5 +14,13 @@ namespace Clases.Ejercicios.Ejercicio3
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public DateTime FechaNacimiento { get; set; }
+
+        //public bool EsMayorDeEdad(int numero) => numero >= 18 ? true : false;
+        public bool EsMayorDeEdad()
+        {
+            int edad = DateTime.Today.Year - FechaNacimiento.Year; 
+            bool esMayor = edad >= 18 ? true : false;
+            return esMayor;
+        }
     }
 }
