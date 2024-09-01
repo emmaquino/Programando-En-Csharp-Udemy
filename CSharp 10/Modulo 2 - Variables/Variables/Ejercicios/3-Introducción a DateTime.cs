@@ -16,12 +16,10 @@ namespace Variables.Ejercicios
 
     public class IntroduccionADateTime
     {
-        /* remueve esta línea para descomentar
         public DateTime Ejercicio(){
             // Tu código debajo de esta línea
-
+            DateTime fecha = new DateTime(DateTime.Now.Year, 05, 12, 10, 00, 00);
             return fecha;
         }
-         */ //<-- remueve esta línea para descomentar
     }
 }
