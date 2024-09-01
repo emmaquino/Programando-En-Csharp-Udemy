@@ -20,7 +20,7 @@ namespace Variables.Ejercicios
             int? resultado = 0;
 
             // Tu código debajo de esta línea
-
+            resultado = numeros.Length == 0 ? null : numeros.Max();
 
             return resultado;
         }
