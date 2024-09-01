@@ -22,5 +22,24 @@ namespace Funciones.Ejercicios
     public class MinMaxPromedio
     {
         // Tu código debajo de esta línea
+        bool ObtenerMinMaxPromedio(int[] numeros, out int minimo, out int maximo, out double promedio)
+        {
+            minimo = 0;
+            maximo = 0;
+            promedio = 0.0;
+
+            if (numeros.Length != 0)
+            {
+                minimo = numeros.Min();
+                maximo = numeros.Max();
+                promedio = numeros.Sum() / numeros.Length;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
     }
 }
