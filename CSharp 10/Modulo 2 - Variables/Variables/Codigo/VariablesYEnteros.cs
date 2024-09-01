@@ -13,7 +13,7 @@ namespace Variables.Codigo
             int alturaEnCentimetros;
             alturaEnCentimetros = 181;
 
-            int edadDeFelipe = -1;
+            int edadDeEmmanuel = -1;
 
             int distanciaDeLaTierraAlSolEnKilometros = 150_000_000;
 
@@ -21,7 +21,7 @@ namespace Variables.Codigo
 
             Console.WriteLine(alturaEnCentimetros);
 
-            Console.WriteLine(edadDeFelipe);
+            Console.WriteLine(edadDeEmmanuel);
 
             Console.WriteLine(distanciaDeLaTierraAlSolEnKilometros);
 
