@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace Clases.Ejercicios.Ejercicio1
 {
     /*
@@ -7,7 +9,7 @@ namespace Clases.Ejercicios.Ejercicio1
 
     1) _nombre (tipo de dato string), 
 
-    2) _apellido (tipo de datostring), 
+    2) _apellido (tipo de dato string), 
 
     3) _fechaNacimiento (tipo de dato DateTime).
 
@@ -30,12 +32,24 @@ namespace Clases.Ejercicios.Ejercicio1
 
     // Aquí puedes crear la clase (Nota: colócala como public)
 
-
+    public class Persona
+    {
+        public string _nombre;
+        public string _apellido;
+        public DateTime _fechaNacimiento;
+    }
 
 
     public class Ejercicio
     {
-
+        public Persona ConstruirPersona(string nombre, string apellido, DateTime fechaNacimiento)
+        {
+            var persona = new Persona();
+            persona._nombre = nombre;
+            persona._apellido = apellido;
+            persona._fechaNacimiento = fechaNacimiento;
+            return persona;
+        }
     }
 
 }
